@@ -28,6 +28,19 @@ mkdir config
 cd config
 touch settings.development.json
 ```
+## settings.development.json
+```json
+{
+  "private": {
+    "openai-api-key": "api-key",
+
+    "accounts": [
+      { "email": "email", "password": "password", "role": "admin" },
+      { "email": "email", "password": "password" }
+    ]
+  }
+}
+```
 Note: python3 should be installed in your path environment variable
 ### Python venv setup
 ```bash
