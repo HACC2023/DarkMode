@@ -1,0 +1,213 @@
+:root {
+  --vibrant-primary: #0073ab;
+  --vibrant-secondary: #5593C7;
+  --vibrant-light: #D5F4FF;
+  --dull-primary: #122D44;
+  --dull-secondary: #BAA98D;
+  --dull-light: #fff9ec;
+  --bg: white;
+  --accent: #ffd368;
+
+  /*Color for toastify alerts*/
+  /*--toastify-color-info: #929292 !important;*/
+  /*--toastify-color-success: var(--vibrant-primary) !important;*/
+  /*--toastify-color-error: #df5345;*/
+}
+
+/* Navbar CSS */
+nav {
+  background-color: var(--dull-primary) !important;
+}
+
+.navbar a {
+  outline-color: var(--dull-light);
+  color: var(--bg) !important;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid var(--accent) !important;
+}
+
+.logo {
+  font-size: 14px;
+}
+
+/* Footer CSS */
+footer {
+  background-color: var(--dull-primary);
+  color: var(--dull-light);
+}
+
+footer a {
+  color: var(--accent) !important;
+}
+
+/* Body CSS */
+body {
+  font-family: sans-serif;
+  background-color: var(--bg) !important;
+}
+
+body .fw-bold {
+  color: var(--dull-primary);
+}
+
+body a {
+  color: var(--vibrant-primary);
+}
+
+.bg-dull-light {
+  background-color: var(--dull-light) !important;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+/* Chatbox CSS */
+.chat-container {
+  width: 800px;
+}
+
+@media (max-width: 900px) {
+  .chat-container {
+    width: 100vw;
+    max-width: 100%;
+  }
+}
+
+.chat-area {
+  max-height: 50vh;
+}
+
+.ai-text-box {
+  border-radius: 15px 15px 15px 1px;
+}
+
+.user-text-box {
+  border-radius: 15px 15px 1px 15px;
+}
+
+.btn-vibrant-primary {
+  background-color: var(--vibrant-primary) !important;
+  border: none !important;
+}
+
+.btn-vibrant-primary:hover {
+  filter: brightness(90%);
+}
+
+.btn-vibrant-primary:active {
+  filter: brightness(80%);
+}
+
+.bg-vibrant-primary {
+  background-color: var(--vibrant-primary) !important;
+}
+
+/* Loading AI Message Animation */
+@keyframes change-color {
+  0%, 100% {
+    background-color: white;
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.dot {
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 3px;
+  display: inline-block;
+  animation: change-color 1s infinite ease-in-out;
+}
+
+.delay-1 {
+  animation-delay: 0s;
+}
+.delay-2 {
+  animation-delay: 0.33s;
+}
+.delay-3 {
+  animation-delay: 0.66s;
+}
+
+/* Chatbot slide in animation */
+.bottom-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.slide-in {
+  position: relative;
+  animation: 0.5s slide-left ease-in-out;
+}
+
+.slide-out {
+  position: relative;
+  animation: 0.5s slide-right ease-in-out forwards;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(1000px);
+  }
+  100% {
+    display: none;
+    pointer-events: none;
+    visibility: hidden;
+    width: 0;
+    max-width: 0;
+  }
+}
+
+
+/* Meet Hoku animation */
+.text-animation  {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+      -225deg,
+      var(--vibrant-primary) 0%,
+      var(--vibrant-secondary) 20%,
+      var(--accent) 40%,
+      var(--dull-light) 60%,
+      var(--vibrant-secondary) 80%,
+      var(--vibrant-primary) 100%
+  );
+  /* Text Clip */
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 60px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+
+
