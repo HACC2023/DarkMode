@@ -49,9 +49,14 @@ python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
 ```
+## Starting Flask server
+```bash
+cd api
+python main.py
+```
 
 ## Diagram Layout
-<img width="1412" alt="diagram" src="https://github.com/micahtilton/hacc-askus/assets/72249867/1f598e4d-ab5c-4b3d-9c4f-c58fcfff5ce9">
+<img width="1412" alt="diagram" src="https://github.com/HACC2023/DarkMode/assets/72249867/11063339-23fb-421f-82b4-7096affae2f4">
 
 
 # Security Considerations
