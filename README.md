@@ -6,6 +6,13 @@
 <p>The current UH ITS AskUs web page uses an outdated keyword search system which makes it difficult for users to find the answers that they are looking for. A search like “wi-fi” would give no results since it does not match the keyword "wifi" exactly. Hoku is an AI chat assistant created to answer natural language questions related to ITS. Hoku harnesses the power of text embeddings for contextual search and OpenAI's GPT 3.5 model for response generation. This offers users an intuitive experience for answering a wide variety of questions.</p>
 </div>
 
+# Mobile Responsive / Intuitive UI
+<img width="1556" alt="Screenshot 2023-11-15 at 11 32 05 PM" src="https://github.com/HACC2023/DarkMode/assets/72249867/65a9ddfc-44a6-46ac-b694-70002134a0f7">
+
+# Resistant to Prompt Injections
+<img width="1640" alt="Screenshot 2023-11-15 at 11 40 34 PM" src="https://github.com/HACC2023/DarkMode/assets/72249867/d7241896-2339-404d-ae3d-79df789cad14">
+
+
 # Installation
 Note: Meteor should be installed globally on your system: [Meteor Installation Guide](https://docs.meteor.com/install.html)
 
